@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+.BodyTitle {
+	color: #000000;
+	font-family: Harrington, Arial, Helvetica, sans-serif;
+	font-size: 46px;
+	font-weight:700;
+}
+
+.BodySubTitle {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+}
+
+.BodyText {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.inverselink:hover {
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.inverselink:link {
+	color:#000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.inverselink:visited {
+	color:#000000;
+	text-decoration: none;
+}
+
+.inverselink:active {
+	color:#000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+a:link {
+	color:#000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+a:visited {
+	color:#000000;
+	text-decoration: none;
+}
+
+a:active {
+	color:#000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
