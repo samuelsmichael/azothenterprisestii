@@ -51,6 +51,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="default.htm" />
+    <Content Include="images\AzothEnterprises.jpg" />
     <Content Include="images\background.jpg" />
     <Content Include="images\default_r1_c1.gif" />
     <Content Include="images\default_r1_c1.jpg" />
