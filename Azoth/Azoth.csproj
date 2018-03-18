@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.htm" />
+    <Content Include="default_alpha.htm" />
     <Content Include="images\AzothEnterprises.jpg" />
     <Content Include="images\background.jpg" />
     <Content Include="images\default_r1_c1.gif" />
@@ -97,6 +98,9 @@
     <Content Include="images\_hcc_thumbs\default_r4_c3.jpg-thumb-80.jpg" />
     <Content Include="images\_hcc_thumbs\default_r5_c1.jpg-thumb-80.jpg" />
     <Content Include="images\_hcc_thumbs\spacer.gif-thumb-80.gif" />
+    <Content Include="style\navbar.css" />
+    <Content Include="style\page.css" />
+    <Content Include="style\text.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -104,9 +108,17 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WorkGuides.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkGuides.aspx.cs">
+      <DependentUpon>WorkGuides.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkGuides.aspx.designer.cs">
+      <DependentUpon>WorkGuides.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="images\Thumbs.db" />
