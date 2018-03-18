@@ -19,7 +19,7 @@
                         onclick="btnEnterPasscode_Click" /></td>
             </tr>       
         </table>
-        <div>There are 53 Work Guides. If you are not a member and would like to obtain other ones, please call Mike Samuels (720.255.8568) or Lari Mangum (303.480.9277)</div>
+        <div>There several more Work Guides. If you are not a member and would like to obtain other ones, please call Mike Samuels (720.255.8568) or Lari Mangum (303.480.9277)</div>
     </asp:Panel>
         
     <asp:Panel ID="pnlDownloadAll" runat="server" Visible="false">
@@ -38,6 +38,7 @@
             </asp:LinkButton>
         </ItemTemplate>
     </asp:DataList>
+        <a href="default_alpha.htm">Home</a>
     </form>
 </body>
 </html>
