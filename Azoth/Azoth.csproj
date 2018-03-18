@@ -111,7 +111,11 @@
     <Content Include="WorkGuides.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DownloadFile.ashx.cs">
+      <DependentUpon>DownloadFile.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkGuide.cs" />
     <Compile Include="WorkGuides.aspx.cs">
       <DependentUpon>WorkGuides.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -121,9 +125,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DownloadFile.ashx" />
     <None Include="images\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="scripts\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
