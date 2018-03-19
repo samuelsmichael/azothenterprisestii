@@ -12,10 +12,11 @@ namespace Azoth {
             get {
                 
                 if (Session["WorkGuideNamesInDateOrder"] == null) {
+                    int i = 0;
                     List<WorkGuide> list = new List<WorkGuide>();
                     DirectoryInfo di = new DirectoryInfo(MapPath("~/WorkGuides/rtfs"));
                     foreach (FileInfo fi in di.GetFiles("*.rtf")) {
-                        WorkGuide workGuide = new WorkGuide(fi.Name);
+                        WorkGuide workGuide = new WorkGuide(fi.Name, this.Context);
                         if (IsMember || workGuide.IsPublic) {
                             list.Add(workGuide);
                         }
@@ -46,6 +47,7 @@ namespace Azoth {
         }
 
         protected void btnEnterPasscode_Click(object sender, EventArgs e) {
+            lblError.Visible = false;
             if (tbPasscode.Text.ToLower() == System.Configuration.ConfigurationManager.AppSettings["Passcode"].ToLower()) {
                 IsMember = true;
                 pnlDownloadAll.Visible = true;
@@ -53,6 +55,8 @@ namespace Azoth {
                 Session["WorkGuideNamesInDateOrder"] = null;
                 dlWorkGuides.DataSource = WorkGuideNamesInDateOrder;
                 dlWorkGuides.DataBind();
+            } else {
+                lblError.Visible = true;
             }
         }
 
