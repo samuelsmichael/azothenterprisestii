@@ -10,16 +10,18 @@
     <link href="style/text.css" type="text/css" rel="stylesheet" />
 
 </head>
-<body 
-    style="background-image: url('../images/background.jpg');
+<body>
+<center>
+<div  style="background-image: url('../images/background.jpg');
     background-size:     cover;                   
     background-repeat:   no-repeat;
-    background-position: center center;" 
->
-    
+    background-position: center center; 
+    width:980px; height:627px; overflow:auto;">
 <form id="form1" runat="server">
-<div>
+
+<div> 
 <center>
+ <center><h1 style="font-family: Georgia; color: #462300; padding:5px; font-size:18pt;">Guides for Practical Work</h1></center>   
     <asp:Panel ID="pnlValidate" runat="server" Visible="true">
         <table>
             <tr>
@@ -49,12 +51,12 @@
         </table>
     </asp:Panel>
     </div>
-    <asp:DataList ID="dlWorkGuides" RepeatLayout="Table" ItemStyle-BorderStyle="Solid" ItemStyle-BorderWidth="1" runat="server" ItemStyle-Width="33%" RepeatColumns="3">
+    <asp:DataList ID="dlWorkGuides" RepeatDirection="Horizontal" style="padding-left:5px; padding-right:5px;" RepeatLayout="Table" ItemStyle-BorderStyle="Solid" ItemStyle-BorderWidth="1" runat="server" ItemStyle-Width="33%" RepeatColumns="3">
         <ItemTemplate>
             <div style="text-align:center; padding:5px;">
                 <asp:Label  style="font-weight:bold;" ID="lblToPonder" runat="server" Text='<%# Eval("ToPonder")%>'></asp:Label>
                 <div>
-                    <asp:LinkButton style="font-size:smaller;margin-top:4px;" ID="lbWorkGuide" OnCommand="LinkButton1_Command" CommandName="DownloadIt" Text='<%# Eval("FileName")%>' runat="server">
+                    <asp:LinkButton style="font-size:smaller;margin-top:4px;text-decoration:underline;" ID="lbWorkGuide" OnCommand="LinkButton1_Command" CommandName="DownloadIt" Text='<%# Eval("FileName")%>' runat="server">
                     </asp:LinkButton>
                 </div>
             </div>
@@ -82,8 +84,10 @@
         </td>
     </tr>
 </table>
-<a  style="text-decoration:underline;" href="default_alpha.htm">Home</a>
+
+<div style="padding:12px;"><a href="default.htm"<span style="font-size:smaller; text-decoration:underline; color:#683200; cursor:pointer;">Home</span></a></div>
+
 </center>
     </form>
-</body>
+</div></center></body>
 </html>
