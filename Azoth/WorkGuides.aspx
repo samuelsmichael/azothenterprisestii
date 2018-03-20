@@ -4,9 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Practical Work Guides</title>
+    <link href="style/page.css" type="text/css" rel="stylesheet" />
+    <link href="style/navbar.css" type="text/css" rel="stylesheet" />
+    <link href="style/text.css" type="text/css" rel="stylesheet" />
+
 </head>
-<body>
+<body 
+    style="background-image: url('../images/background.jpg');
+    background-size:     cover;                   
+    background-repeat:   no-repeat;
+    background-position: center center;" 
+>
     
 <form id="form1" runat="server">
 <div>
@@ -56,24 +65,24 @@
 <div>Books to Have for Readings Referred to in each Work Guide</div>
 <table>
     <tr>
-        <td>1.	Forty Years After Gurdjieff – John Fuchs
+        <td>1.	<a style="text-decoration:underline;"  href="https://www.bythewaybooks.com/pages/books/545/john-fuchs/forty-years-after-gurdjieff-a-guide-to-practical-work">Forty Years After Gurdjieff – John Fuchs</a>
         </td>
     </tr>
     <tr>
-        <td>2.	In Search of the Miraculous – P.D. Ouspensky
+        <td>2.	<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/235/p-d-ouspensky/in-search-of-the-miraculous">In Search of the Miraculous – P.D. Ouspensky</a>
         </td>
     </tr>
     <tr>
-        <td>3.	Views From the Real World* – G.I. Gurdjieff
-        <div style="margin-left:4em;">(*Rewrite of Views is called “Search for Being”)</div>
+        <td>3.	<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/75/g-i-gurdjieff/views-from-the-real-world">Views From the Real World* – G.I. Gurdjieff</a>
+        <div style="margin-left:4em;">(*Rewrite of Views is called “<a href="https://www.bythewaybooks.com/pages/books/16391/g-i-gurdjieff/in-search-of-being-the-fourth-way-to-consciousness">In Search of Being”</a>)</div>
         </td>
     </tr>
     <tr>
-        <td>4.	Reality of Being – Jeanne de Salzmann
+        <td>4.	<a  style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/13720/jeanne-de-salzmann/the-reality-of-being-the-fourth-way-of-gurdjieff">Reality of Being – Jeanne de Salzmann</a>
         </td>
     </tr>
 </table>
-<a href="default_alpha.htm">Home</a>
+<a  style="text-decoration:underline;" href="default_alpha.htm">Home</a>
 </center>
     </form>
 </body>
