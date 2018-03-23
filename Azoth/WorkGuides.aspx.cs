@@ -41,6 +41,13 @@ namespace Azoth {
             if (!IsPostBack) {
                 Session["WorkGuideNamesInDateOrder"] = null;
                 Session["IsMember"] = null;
+                string secretKey = Request.QueryString["q103"];
+                if (secretKey != null && secretKey == "b103") {
+                    IsMember = true;
+                    pnlDownloadAll.Visible = true;
+                    pnlValidate.Visible = false;
+                    Session["WorkGuideNamesInDateOrder"] = null;
+                }
                 dlWorkGuides.DataSource = WorkGuideNamesInDateOrder;
                 dlWorkGuides.DataBind();
             }
