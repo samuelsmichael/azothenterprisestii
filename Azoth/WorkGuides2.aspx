@@ -10,10 +10,10 @@
     <link href="/style/page.css" type="text/css" rel="stylesheet" />
     <link href="/style/navbar.css" type="text/css" rel="stylesheet" />
     <link href="/style/text.css" type="text/css" rel="stylesheet" />
-    <link href="~/style/page.css" type="text/css" rel="stylesheet" />
-    <link href="~/style/navbar.css" type="text/css" rel="stylesheet" />
-    <link href="~/style/text.css" type="text/css" rel="stylesheet" />
-    <style>
+    <link href="./style/page.css" type="text/css" rel="stylesheet" />
+    <link href="./style/navbar.css" type="text/css" rel="stylesheet" />
+    <link href="./style/text.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
 .topractice
 {
     font-weight:normal;
@@ -124,58 +124,69 @@ a:active {
 	}
 
     </style>
+
+
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <center>
-        <asp:DataList ID="dlWorkGuides" Width="80%" RepeatDirection="Vertical" Style="padding-left: 5px;  padding-right: 5px;"  RepeatLayout="Table" ItemStyle-BorderStyle="Solid" ItemStyle-BorderWidth="0"
-            runat="server" >
-            <ItemTemplate>
+    <center>
+        <div style="background-image: url('../images/background.jpg'); background-size: cover;
+            background-repeat: no-repeat; background-position: center center; width: 980px;
+            >
+            <asp:DataList ID="dlWorkGuides" Width="80%" RepeatDirection="Vertical" Style="padding-left: 5px;
+                padding-right: 5px;" RepeatLayout="Table" ItemStyle-BorderStyle="Solid" ItemStyle-BorderWidth="0"
+                runat="server">
+                <ItemTemplate>
                     <div style="text-align: center; padding: 5px;">
-                        <div class="workguideheading">Work Guide</div>
-                        <div class="workguideheadingweekbeginning">Week Beginning <%# Eval("DateString")%></div>
-                        <div class="workguidebodyheading">Ponderence</div>
+                        <div class="workguideheading">
+                            Work Guide</div>
+                        <div class="workguideheadingweekbeginning">
+                            Week Beginning
+                            <%# Eval("DateString")%></div>
+                        <div class="workguidebodyheading">
+                            Ponderence</div>
                         <div class="ponderence">
-                        <asp:Label ID="lblToPonder" runat="server" Text='<%# Eval("ToPonder")%>'></asp:Label>
+                            <asp:Label ID="lblToPonder" runat="server" Text='<%# Eval("ToPonder")%>'></asp:Label>
                         </div>
                         <div class="ponderenceauthor">
                             <asp:Label ID="lblToPonderAuthor" runat="server" Text='<%# Eval("ToPonderAuthor")%>'></asp:Label>
-                            </div>
-                        <div class="workguidebodyheading">To Read</div>
+                        </div>
+                        <div class="workguidebodyheading">
+                            To Read</div>
                         <div class="toread">
                             <asp:Label ID="lblToRead" runat="server" Text='<%# Eval("ToRead")%>'></asp:Label>
                         </div>
                         <div class="toreadpages">
                             <asp:Label ID="lblToReadPages" runat="server" Text='<%# Eval("ToReadPages")%>'></asp:Label>
                         </div>
-                        <div class="workguidebodyheading">To Practice</div>
+                        <div class="workguidebodyheading">
+                            To Practice</div>
                         <div class="topractice">
                             <asp:Label ID="lblToPractice" runat="server" Text='<%# Eval("ToPractice")%>'></asp:Label>
                         </div>
                         <div class="workguidelink">
-                            <asp:LinkButton ID="lbWorkGuide" ToolTip='Download' OnCommand="LinkButton1_Command" CommandName='<%# Eval("FileName")%>'
-                                Text='Download' runat="server">
+                            <asp:LinkButton ID="lbWorkGuide" ToolTip='Download' OnCommand="LinkButton1_Command"
+                                CommandName='<%# Eval("FileName")%>' Text='Download' runat="server">
                             </asp:LinkButton>
                         </div>
                         <hr />
                     </div>
-                
-            </ItemTemplate>
-        </asp:DataList>
-        </center>
-    </div>
-    <div class="buttons">
-        <table width="95%">
-            <tr>
-                <td align="left"><asp:Button ID="btnPrevious" runat="server" Text="Previous" 
-                        onclick="btnPrevious_Click" /></td>
-                <td align="right"><asp:Button ID="btnNext" runat="server" Text="Next" 
-                        onclick="btnNext_Click" /></td>
-            </tr>
-        </table>
-        
-    </div>
+                </ItemTemplate>
+            </asp:DataList>
+        </div>
+        <div class="buttons">
+            <table width="95%">
+                <tr>
+                    <td align="left">
+                        <asp:Button ID="btnPrevious" runat="server" Text="Previous" OnClick="btnPrevious_Click" />
+                    </td>
+                    <td align="right">
+                        <asp:Button ID="btnNext" runat="server" Text="Next" OnClick="btnNext_Click" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
     </form>
 </body>
 </html>

@@ -8,6 +8,117 @@
     <link href="style/page.css" type="text/css" rel="stylesheet" />
     <link href="style/navbar.css" type="text/css" rel="stylesheet" />
     <link href="style/text.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+.topractice
+{
+    font-weight:normal;
+}
+.toreadpages 
+{
+    font-weight:normal;
+}
+.toread 
+{
+    font-weight:normal;
+}
+.ponderenceauthor
+{
+    font-style: italic;
+}
+.ponderence 
+{
+    font-weight:normal;
+}
+.workguideheading 
+{
+    font-weight:bold; font-size:16pt;
+}
+.workguideheadingweekbeginning 
+{
+    font-weight:normal; font-size:12pt;
+}
+.workguidelink 
+{
+    font-size:smaller;margin-top:1em;text-decoration:underline;margin-bottom:5px;
+}
+.workguidebodyheading
+{
+    font-family: Georgia;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom:.5em;
+    margin-top:2em;
+}
+.BodyTitle {
+	color: #000000;
+	font-family: Harrington, Arial, Helvetica, sans-serif;
+	font-size: 46px;
+	font-weight:700;
+}
+
+.BodySubTitle {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+}
+
+.BodyText {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.inverselink:hover {
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.inverselink:link {
+	color:#000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.inverselink:visited {
+	color:#000000;
+	text-decoration: none;
+}
+
+.inverselink:active {
+	color:#000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+a:hover {
+	color: #ff9d00 !important;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+a:link {
+	color:#683200 !important;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+a:visited {
+	color:#683200 !important;
+	text-decoration: none;
+}
+
+a:active {
+	color:#683200 !important;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+    </style>
 
 </head>
 <body>

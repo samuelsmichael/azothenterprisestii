@@ -55,6 +55,8 @@ namespace Azoth {
                 string secretKey = Request.QueryString["q103"];
                 if (secretKey != null && secretKey == "b103") {
                     IsMember = true;
+                } else {
+                    IsMember = false;
                 }
                 string allowPaging = Request.QueryString["AllowPaging"];
                 if (allowPaging != null) {
