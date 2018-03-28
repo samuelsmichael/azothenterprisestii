@@ -48,7 +48,11 @@ namespace Azoth {
                     pnlValidate.Visible = false;
                     Session["WorkGuideNamesInDateOrder"] = null;
                 }
-                dlWorkGuides.DataSource = WorkGuideNamesInDateOrder;
+                PagedDataSource pg = new PagedDataSource();
+                pg.DataSource = WorkGuideNamesInDateOrder;
+                pg.AllowPaging = false;
+                pg.PageSize = 1;
+                dlWorkGuides.DataSource = pg;
                 dlWorkGuides.DataBind();
             }
         }

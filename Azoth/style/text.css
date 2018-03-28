@@ -1,6 +1,46 @@
 @charset "utf-8";
 /* CSS Document */
 
+.topractice
+{
+    font-weight:normal;
+}
+.toreadpages 
+{
+    font-weight:normal;
+}
+.toread 
+{
+    font-weight:normal;
+}
+.ponderenceauthor
+{
+    font-style: italic;
+}
+.ponderence 
+{
+    font-weight:normal;
+}
+.workguideheading 
+{
+    font-weight:bold; font-size:16pt;
+}
+.workguideheadingweekbeginning 
+{
+    font-weight:normal; font-size:12pt;
+}
+.workguidelink 
+{
+    font-size:smaller;margin-top:1em;text-decoration:underline;margin-bottom:5px;
+}
+.workguidebodyheading
+{
+    font-family: Georgia;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom:.5em;
+    margin-top:2em;
+}
 .BodyTitle {
 	color: #000000;
 	font-family: Harrington, Arial, Helvetica, sans-serif;
