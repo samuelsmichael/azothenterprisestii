@@ -1,5 +1,5 @@
 <ponderence>Freedom is the freedom to serve a purpose infinitely greater than anything I can imagine. Freedom is, at the same time, submission.</ponderence>
 <ponderenceauthor>Michel Conge</ponderenceauthor>
 <toread><a style="text-decoration:underline;"  href="https://www.bythewaybooks.com/pages/books/545/john-fuchs/forty-years-after-gurdjieff-a-guide-to-practical-work">Forty Years After Gurdjieff - John Fuchs</a></toread>
-<toreadpages>Ch. 22 Freedom - Read p.80 only<toreadpages>
+<toreadpages>Ch. 22 Freedom - Read p.80 only</toreadpages>
 <topractice>Each day we are confronted with conditions that do not support the outcome that we expected. When you recognize your identification engaging, pause, relax your face and breathing, and say to yourself, &ldquo;Not my will but Thy Will be done.&rdquo; See if you can drop your agenda and begin again.</topractice>

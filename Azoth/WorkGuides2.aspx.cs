@@ -51,16 +51,13 @@ namespace Azoth {
         protected void Page_Load(object sender, EventArgs e) {
             if (!IsPostBack) {
                 Session["WorkGuideNamesInDateOrder"] = null;
-                Session["IsMember"] = null;
                 string secretKey = Request.QueryString["q103"];
                 if (secretKey != null && secretKey == "b103") {
                     IsMember = true;
-                } else {
-                    IsMember = false;
                 }
                 string allowPaging = Request.QueryString["AllowPaging"];
                 if (allowPaging != null) {
-                    AllowPaging=Utils.ObjectToBool(allowPaging);
+                    AllowPaging = Utils.ObjectToBool(allowPaging);
                 }
                 bindWorkGuides();
             }
@@ -73,23 +70,27 @@ namespace Azoth {
             pg.DataSource = WorkGuideNamesInDateOrder;
             pg.AllowPaging = AllowPaging;
             pg.PageSize = 1;
-            if (CurrentPage >= pg.PageCount) {
-                CurrentPage--;
-            }
-            if (CurrentPage < 0) {
-                CurrentPage++;
-            }
             pg.CurrentPageIndex = CurrentPage;
             dlWorkGuides.DataSource = pg;
             dlWorkGuides.DataBind();
         }
 
         protected void btnPrevious_Click(object sender, EventArgs e) {
+            if (CurrentPage == 0) {
+                Response.Redirect("WorkGuides1.aspx");
+            }
             CurrentPage--;
             bindWorkGuides();
         }
 
         protected void btnNext_Click(object sender, EventArgs e) {
+            if (CurrentPage == WorkGuideNamesInDateOrder.Count -1) {
+                if (IsMember) {
+                    CurrentPage--;
+                } else {
+                    Response.Redirect("WorkGuidesMembership.aspx");
+                }
+            }
             CurrentPage++;
             bindWorkGuides();
         }
@@ -100,6 +101,19 @@ namespace Azoth {
             }
             set {
                 ViewState["CurrentPage"] = value;
+            }
+        }
+
+        protected void dlWorkGuides_ItemDataBound(object sender, DataListItemEventArgs e) {
+            if (e.Item is DataListItem) {
+                Button l1 = (Button)e.Item.FindControl("btnPrevious");
+                if (l1 != null) {
+                    if (CurrentPage == 0) {
+                        l1.Enabled = false;
+                    } else {
+                        l1.Enabled = true;
+                    }
+                }
             }
         }
     }

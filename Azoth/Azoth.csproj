@@ -98,9 +98,9 @@
     <Content Include="images\_hcc_thumbs\default_r4_c3.jpg-thumb-80.jpg" />
     <Content Include="images\_hcc_thumbs\default_r5_c1.jpg-thumb-80.jpg" />
     <Content Include="images\_hcc_thumbs\spacer.gif-thumb-80.gif" />
-    <Content Include="style\navbar.css" />
-    <Content Include="style\page.css" />
-    <Content Include="style\text.css" />
+    <Content Include="navbar.css" />
+    <Content Include="page.css" />
+    <Content Include="text.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -111,7 +111,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="WorkGuides.aspx" />
+    <Content Include="WorkGuides1.aspx" />
     <Content Include="WorkGuides2.aspx" />
+    <Content Include="WorkGuidesMembership.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DownloadFile.ashx.cs">
@@ -127,12 +129,26 @@
     <Compile Include="WorkGuides.aspx.designer.cs">
       <DependentUpon>WorkGuides.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WorkGuides1.aspx.cs">
+      <DependentUpon>WorkGuides1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkGuides1.aspx.designer.cs">
+      <DependentUpon>WorkGuides1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WorkGuides2.aspx.cs">
       <DependentUpon>WorkGuides2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WorkGuides2.aspx.designer.cs">
       <DependentUpon>WorkGuides2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkGuidesMembership.aspx.cs">
+      <DependentUpon>WorkGuidesMembership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkGuidesMembership.aspx.designer.cs">
+      <DependentUpon>WorkGuidesMembership.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +158,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="scripts\" />
+    <Folder Include="style\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\..\..\..\Temp\Sunriver\SunriverDatabase\Common\Common.csproj">

@@ -9,10 +9,18 @@ body
 
 .otherthanmainpage
 {
-    background-image: url('../images/background.jpg');
-    background-size:     cover;                      /* <------ */
+    background-image: url('images/background.jpg');
+    background-size:     cover;                       
     background-repeat:   no-repeat;
-    background-position: center center;      
+    background-position: center center; 
+     width: 980px;     
+}
+.styledbuttons
+{
+    background-image: url('images/background.jpg');
+    background-size:     cover;                       
+    background-repeat:   no-repeat;
+    background-position: center center; 
 }
 
 .centeralign{

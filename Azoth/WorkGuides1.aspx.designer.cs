@@ -10,7 +10,7 @@
 namespace Azoth {
     
     
-    public partial class WorkGuides2 {
+    public partial class WorkGuides1 {
         
         /// <summary>
         /// form1 control.
@@ -22,39 +22,21 @@ namespace Azoth {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// dlWorkGuides control.
+        /// btnHome1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dlWorkGuides;
+        protected global::System.Web.UI.WebControls.Button btnHome1;
         
         /// <summary>
-        /// lbWorkGuide control.
+        /// btnToActualWorkGuides control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbWorkGuide;
-        
-        /// <summary>
-        /// btnPrevious control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPrevious;
-        
-        /// <summary>
-        /// btnNext control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNext;
+        protected global::System.Web.UI.WebControls.Button btnToActualWorkGuides;
     }
 }
