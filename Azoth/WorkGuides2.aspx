@@ -58,8 +58,8 @@
             </asp:DataList>
             <center>
             <div class="workguidelink2" style="margin-top:20px;">
-                <asp:LinkButton ID="lbWorkGuide" ToolTip='Download' OnCommand="LinkButton1_Command"
-                    CommandName='<%# Eval("FileName")%>' Text='Download document' runat="server">
+                <asp:LinkButton ID="lbWorkGuide" ToolTip='Download' OnCommand="LinkButton1_Command" 
+                    CommandName='Download It' Text='Download document' runat="server">
                 </asp:LinkButton>
             </div>
             </center>
@@ -67,10 +67,13 @@
                 <hr />
                 <table width="980px" cellpadding="0" cellspacing="0">
                     <tr>
-                        <td align="left">
+                        <td align="left" style="width:40%;">
                             <asp:Button CssClass="styledbuttons" style="margin-left:1em;" ID="btnPrevious" runat="server" Text="Previous" OnClick="btnPrevious_Click" />
                         </td>
-                        <td align="right">
+                        <td align="center" style="width:20%;">
+                            <asp:Button CssClass="styledbuttons"  Visible="false" ID="btnDAll" runat="server" Text="Download all Work Guides in a zip file" OnClick="btnDownloadZipFileOfAllFiles_Click" />
+                        </td>
+                        <td align="right" style="width:40%;">
                             <asp:Button CssClass="styledbuttons" style="margin-right:1em;" ID="btnNext" runat="server" Text="Next" OnClick="btnNext_Click" />
                         </td>
                     </tr>

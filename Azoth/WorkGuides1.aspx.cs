@@ -9,13 +9,21 @@ namespace Azoth {
     public partial class WorkGuides1 : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
             if (!IsPostBack) {
-                Session["WorkGuideNamesInDateOrder"] = null;
-                Session["IsMember"] = null;
-                string secretKey = Request.QueryString["q103"];
-                if (secretKey != null && secretKey == "b103") {
-                    IsMember = true;
-                } else {
-                    IsMember = false;
+
+                if (Request.Cookies["AzothMember"] != null) {
+                    HttpCookie cookie = Request.Cookies["AzothMember"];
+                    if (cookie.Value == "yes") {
+                        IsMember = true;
+                    }
+                }
+                if (!IsMember) {
+                    Session["WorkGuideNamesInDateOrder"] = null;
+                    string secretKey = Request.QueryString["q103"];
+                    if (secretKey != null && secretKey == "b103") {
+                        IsMember = true;
+                    } else {
+                        IsMember = false;
+                    }
                 }
             }
         }

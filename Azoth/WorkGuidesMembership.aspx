@@ -19,6 +19,39 @@
     <center>
     <div class="otherthanmainpage" style="height:607px;position:relative;">
         <div class="BodyTitle2">Work Guides Membership</div>    
+        <asp:Panel runat="server" ID="pnlNotMember">
+        <div class="BodyText" style="font-size:12pt; margin-top:2em;padding-left:100px;padding-right:100px;">
+        In order to view the rest of the Work Guides and if you are a member, please key in the password.  
+        Otherwise, there is a one-time fee $10.00 (USD), which you can pay via PayPal by clicking the Pay Now button, below.</div>
+        </asp:Panel>
+        <asp:Panel runat="server" ID="pnlJustPaid" Visible="false">
+        <div class="BodyText" style="font-size:12pt; margin-top:2em;padding-left:100px;padding-right:100px;">
+            <asp:Label runat="server" ID="lblSuccessPaymentMessage" ></asp:Label>
+        </div>
+        </asp:Panel>
+        <asp:Panel style="margin-top:2em;" ID="pnlValidate" runat="server" Visible="true">
+            <table>
+                <tr>
+                    <td>Member password:</td>
+                    <td><asp:TextBox ID="tbPasscode" runat="server"></asp:TextBox></td>
+                    <td><asp:Button ID="btnEnterPasscode" runat="server" Text="Go" 
+                            onclick="btnEnterPasscode_Click" /></td>
+                </tr>       
+                <tr>
+                    <td>
+                        <asp:Label ID="lblError" Text="Invalid passcode" runat="server" Visible="false" ForeColor="Red" Font-Bold="true"></asp:Label>
+                    
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <asp:Panel runat="server" ID="pnlPaymentButtons">
+        <asp:ImageButton style="margin-top:3em;" ID="ImageButton1" runat="server" ImageUrl="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" PostBackUrl="https://www.paypal.com/cgi-bin/webscr" />
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="NNBZSSULKCSSN">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </asp:Panel>
+
         <div style="position:absolute; bottom:15px;">
             <hr />
             <table width="980px"><tr>
@@ -37,5 +70,6 @@
     </div>
     </center>
     </form>
+
 </body>
 </html>

@@ -63,7 +63,8 @@ namespace Azoth {
             }
         }
         protected void LinkButton1_Command(object sender, CommandEventArgs e) {
-            Response.Redirect("~/DownloadFile.ashx?FileName=" + e.CommandName);
+            string fileName=((WorkGuide2)WorkGuideNamesInDateOrder[CurrentPage]).FileName;
+            Response.Redirect("~/DownloadFile.ashx?FileName=" + fileName);
         }
         private void bindWorkGuides() {
             PagedDataSource pg = new PagedDataSource();
@@ -73,6 +74,11 @@ namespace Azoth {
             pg.CurrentPageIndex = CurrentPage;
             dlWorkGuides.DataSource = pg;
             dlWorkGuides.DataBind();
+            if (IsMember) {
+                btnDAll.Visible = true;
+            } else {
+                btnDAll.Visible = false;
+            }
         }
 
         protected void btnPrevious_Click(object sender, EventArgs e) {
@@ -102,6 +108,10 @@ namespace Azoth {
             set {
                 ViewState["CurrentPage"] = value;
             }
+        }
+
+        protected void btnDownloadZipFileOfAllFiles_Click(object sender, EventArgs e) {
+            Response.Redirect("~/DownloadFile.ashx?FileName=All Work Guides.zip");
         }
 
         protected void dlWorkGuides_ItemDataBound(object sender, DataListItemEventArgs e) {
