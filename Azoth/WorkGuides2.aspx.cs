@@ -50,6 +50,7 @@ namespace Azoth {
 
         protected void Page_Load(object sender, EventArgs e) {
             if (!IsPostBack) {
+                Session["CurrentPage"] = "WorkGuides2.aspx";
                 Session["WorkGuideNamesInDateOrder"] = null;
                 string secretKey = Request.QueryString["q103"];
                 if (secretKey != null && secretKey == "b103") {
@@ -60,6 +61,23 @@ namespace Azoth {
                     AllowPaging = Utils.ObjectToBool(allowPaging);
                 }
                 bindWorkGuides();
+            }
+            lblThankYou.Visible = false;
+            btnDAll.Visible = true;
+            string from = Request.QueryString["From"];
+            if (Common.Utils.isNothingNot(from)) {
+                if (from.ToLower() == "email") {
+                    if (Common.Utils.isNothing(Session["showedthankyou"])) {
+                        Session["showedthankyou"] = true;
+                        lblThankYou.Visible = true;
+                        btnDAll.Visible = false;
+                    } else {
+                        btnDAll.Visible = true;
+                    }
+                } else {
+                    btnDAll.Visible = true;
+                }
+
             }
         }
         protected void LinkButton1_Command(object sender, CommandEventArgs e) {
@@ -112,6 +130,9 @@ namespace Azoth {
 
         protected void btnDownloadZipFileOfAllFiles_Click(object sender, EventArgs e) {
             Response.Redirect("~/DownloadFile.ashx?FileName=All Work Guides.zip");
+        }
+        protected void btnContactUs_Click(object sender, EventArgs e) {
+            Response.Redirect("ContactUs.aspx");
         }
 
         protected void dlWorkGuides_ItemDataBound(object sender, DataListItemEventArgs e) {

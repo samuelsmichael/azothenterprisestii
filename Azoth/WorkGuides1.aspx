@@ -33,15 +33,46 @@
                     and like reading the work ideas, something new may be discovered each time.</p>
                     <p>We hold a good wish for the appetite of your striving.  Thank you.</p>
                 </div>
+ <center>
+<div style="margin-top:3em;font-size:smaller;">Books to Have for Readings Referred to in each Work Guide</div>
+<table style="font-size:smaller;">
+    <tr>
+        <td>1.	<a style="text-decoration:underline"  href="https://www.bythewaybooks.com/pages/books/545/john-fuchs/forty-years-after-gurdjieff-a-guide-to-practical-work">Forty Years After Gurdjieff – John Fuchs</a>
+        </td>
+    </tr>
+    <tr>
+        <td>2.	<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/235/p-d-ouspensky/in-search-of-the-miraculous">In Search of the Miraculous – P.D. Ouspensky</a>
+        </td>
+    </tr>
+    <tr>
+        <td>3.	<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/75/g-i-gurdjieff/views-from-the-real-world">Views From the Real World* – G.I. Gurdjieff</a>
+        <div style="margin-left:4em;">(*Rewrite of Views is called “<a href="https://www.bythewaybooks.com/pages/books/16391/g-i-gurdjieff/in-search-of-being-the-fourth-way-to-consciousness">In Search of Being”</a>)</div>
+        </td>
+    </tr>
+    <tr>
+        <td>4.	<a  style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/13720/jeanne-de-salzmann/the-reality-of-being-the-fourth-way-of-gurdjieff">Reality of Being – Jeanne de Salzmann</a>
+        </td>
+    </tr>
+</table>
+</center>
+
+
+
             <div style="position:absolute; bottom:15px;">
                 <hr />
                 <table width="980px"><tr>
-                <td align="left">
+                <td align="left"  style="width:30%;">
                     <asp:Button class="styledbuttons" style="margin-left:1em;" ID="btnHome1" 
                         runat="server" Text="Home" 
                         onclick="btnHome1_Click" />
+                    <asp:Button class="styledbuttons" style="margin-left:1em;" ID="btnContactUs" 
+                        runat="server" Text="Contact Us" 
+                        onclick="btnContactUs_Click" />
                 </td>
-                <td align="right">
+                <td align="center"  style="width:40%;">
+                    <asp:Label style="font-weight:bold;" ID="lblThankYou" runat="server" Visible="false" ForeColor="#ee4803" Text="Thank you for contacting us. We will get back to you."></asp:Label>
+                </td>
+                <td align="right" style="width:30%;">
                     <asp:Button class="styledbuttons" style="margin-right:1em;" 
                         ID="btnToActualWorkGuides" runat="server" Text="Work Guides" 
                         onclick="btnToActualWorkGuides_Click" />

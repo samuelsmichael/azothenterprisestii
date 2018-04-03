@@ -1,0 +1,6 @@
+<ponderence>I ask you to believe nothing that you cannot verify for yourself.</ponderence>
+<ponderenceauthor>G.I. Gurdjieff</ponderenceauthor>
+<toread><a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/75/g-i-gurdjieff/views-from-the-real-world">Views From the Real World - G.I. Gurdjieff</a></toread>
+<toreadpages>One-sided Development - pp.82-83</toreadpages>
+<topractice>Each day, pick some piece of advice or a certainty expressed to another, and ask yourself the question, 
+&ldquo;Have I verified this data, or is this just an expression of some hearsay that I have accepted blindly?&rdquo;</topractice>

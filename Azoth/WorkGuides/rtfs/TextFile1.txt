@@ -1,0 +1,15 @@
+<ponderence></ponderence>
+<ponderenceauthor></ponderenceauthor>
+<toread></toread>
+<toreadpages></toreadpages>
+<topractice></topractice>
+
+<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/545/john-fuchs/forty-years-after-gurdjieff-a-guide-to-practical-work">Forty Years After Gurdjieff - John Fuchs</a>
+
+<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/235/p-d-ouspensky/in-search-of-the-miraculous">In Search of the Miraculous - P.D. Ouspensky</a>
+
+<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/75/g-i-gurdjieff/views-from-the-real-world">Views From the Real World - G.I. Gurdjieff</a>
+
+<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/16391/g-i-gurdjieff/in-search-of-being-the-fourth-way-to-consciousness">In Search of Being”</a>
+
+<a style="text-decoration:underline;" href="https://www.bythewaybooks.com/pages/books/13720/jeanne-de-salzmann/the-reality-of-being-the-fourth-way-of-gurdjieff">Reality of Being - Jeanne de Salzmann</a>
