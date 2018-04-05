@@ -49,13 +49,13 @@ namespace Azoth {
         protected global::System.Web.UI.WebControls.Button btnPrevious;
         
         /// <summary>
-        /// btnContactUs control.
+        /// btnHome1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnContactUs;
+        protected global::System.Web.UI.WebControls.Button btnHome1;
         
         /// <summary>
         /// lblThankYou control.
@@ -74,6 +74,15 @@ namespace Azoth {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnDAll;
+        
+        /// <summary>
+        /// btnContactUs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnContactUs;
         
         /// <summary>
         /// btnNext control.

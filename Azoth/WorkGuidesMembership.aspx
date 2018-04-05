@@ -56,20 +56,29 @@
                 </table>
             </asp:Panel>
             <asp:Panel runat="server" ID="pnlPaymentButtons">
-                       <asp:ImageButton style="margin-top:3em;" ID="ImageButton1" runat="server" 
+
+
+                       <asp:ImageButton style="margin-top:3em;" ID="ImageButton1DiamondSoftware" runat="server" 
                        ImageUrl="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" PostBackUrl="https://www.paypal.com/cgi-bin/webscr" />
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="NNBZSSULKCSSN">
-<input type="hidden" name="custom" value='<%= Session.SessionID %>'
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
-
 <!--
-<asp:ImageButton Style="margin-top: 3em;" ID="ImageButton2" runat="server" ImageUrl="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif"
+<asp:ImageButton Style="margin-top: 3em;" ID="ImageButton2Sandbox" runat="server" ImageUrl="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif"
                     PostBackUrl="https://www.sandbox.paypal.com/cgi-bin/webscr" />
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="UHKERL2FYB7YC">
 <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+-->
+
+<!--
+<asp:ImageButton Style="margin-top: 3em;" ID="ImageButton2DiamondSoftwareAzoth" runat="server" ImageUrl="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif"
+                    PostBackUrl="https://www.sandbox.paypal.com/cgi-bin/webscr" />
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="P77M8L4BNSAA2">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
 -->
 

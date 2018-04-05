@@ -11,9 +11,12 @@ namespace Azoth {
             if (!IsPostBack) {
                 Session["CurrentPage"] = "WorkGuidesMembership.aspx";
                 string success = Request.QueryString["st"];
+                if (Common.Utils.isNothing(success)) {
+                    success = Request.QueryString["success"];
+                }
                 string cancel = Request.QueryString["cancel"];
                 if (
-                    (success != null && success != "" && success == "Completed") /*||
+                    (success != null && success != "" && (success == "Completed" || success == "true")) /*||
                     (cancel != null && cancel != "" && cancel == "true") // TODO: take out when going live.*/   
                     ) {
                     pnlNotMember.Visible = false;

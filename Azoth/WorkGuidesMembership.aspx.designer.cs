@@ -94,22 +94,31 @@ namespace Azoth {
         protected global::System.Web.UI.WebControls.Panel pnlPaymentButtons;
         
         /// <summary>
-        /// ImageButton1 control.
+        /// ImageButton1DiamondSoftware control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton1DiamondSoftware;
         
         /// <summary>
-        /// ImageButton2 control.
+        /// ImageButton2Sandbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton2Sandbox;
+        
+        /// <summary>
+        /// ImageButton2DiamondSoftwareAzoth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton2DiamondSoftwareAzoth;
         
         /// <summary>
         /// btnHome1 control.

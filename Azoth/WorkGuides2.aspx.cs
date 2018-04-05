@@ -127,6 +127,9 @@ namespace Azoth {
                 ViewState["CurrentPage"] = value;
             }
         }
+        protected void btnHome1_Click(object sender, EventArgs e) {
+            Response.Redirect("default_alpha.htm");
+        }
 
         protected void btnDownloadZipFileOfAllFiles_Click(object sender, EventArgs e) {
             Response.Redirect("~/DownloadFile.ashx?FileName=All Work Guides.zip");

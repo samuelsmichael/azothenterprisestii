@@ -73,8 +73,8 @@
                         <td align="left" style="width: 20%;">
                             <asp:Button CssClass="styledbuttons" Style="margin-left: 1em;" ID="btnPrevious" runat="server"
                                 Text="Previous" OnClick="btnPrevious_Click" />
-                            <asp:Button class="styledbuttons" Style="margin-left: 1em;" ID="btnContactUs" runat="server"
-                                Text="Contact Us" OnClick="btnContactUs_Click" />
+                            <asp:Button class="styledbuttons" Style="margin-left: 1em;" ID="btnHome1" runat="server"
+                                Text="Home" OnClick="btnHome1_Click" />
                         </td>
                         <td align="center" style="width: 60%;">
                             <asp:Label Style="font-weight: bold; margin-right: 1em;" ID="lblThankYou" runat="server"
@@ -83,6 +83,8 @@
                                 Text="Download all Work Guides in a zip file" OnClick="btnDownloadZipFileOfAllFiles_Click" />
                         </td>
                         <td align="right" style="width: 20%;">
+                            <asp:Button class="styledbuttons" Style="margin-right: 1em;" ID="btnContactUs" runat="server"
+                                Text="Contact Us" OnClick="btnContactUs_Click" />
                             <asp:Button CssClass="styledbuttons" Style="margin-right: 1em;" ID="btnNext" runat="server"
                                 Text="Next" OnClick="btnNext_Click" />
                         </td>
