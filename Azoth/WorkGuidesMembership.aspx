@@ -24,8 +24,8 @@
             <asp:Panel runat="server" ID="pnlNotMember">
                 <div class="BodyText" style="font-size: 12pt; margin-top: 2em; padding-left: 100px;
                     padding-right: 100px;">
-                    In order to view the rest of the Work Guides and if you are a member, please key
-                    in the password. Otherwise, there is a one-time fee $10.00 (USD), which you can
+                    There are a year's worth of weekly Work Guides. In order to view the rest of them, and if you are a member, please key
+                    in the password. Otherwise, to become a member, there is a one-time fee of $10.00 (USD), which you can
                     pay via PayPal by clicking the Pay Now button, below.</div>
             </asp:Panel>
             <asp:Panel runat="server" ID="pnlJustPaid" Visible="false">
@@ -56,18 +56,32 @@
                 </table>
             </asp:Panel>
             <asp:Panel runat="server" ID="pnlPaymentButtons">
-                <!--        <asp:ImageButton style="margin-top:3em;" ID="ImageButton1" runat="server" ImageUrl="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" PostBackUrl="https://www.paypal.com/cgi-bin/webscr" />
+                       <asp:ImageButton style="margin-top:3em;" ID="ImageButton1" runat="server" 
+                       ImageUrl="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" PostBackUrl="https://www.paypal.com/cgi-bin/webscr" />
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="NNBZSSULKCSSN">
+<input type="hidden" name="custom" value='<%= Session.SessionID %>'
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
--->
-                <asp:ImageButton Style="margin-top: 3em;" ID="ImageButton2" runat="server" ImageUrl="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif"
+
+<!--
+<asp:ImageButton Style="margin-top: 3em;" ID="ImageButton2" runat="server" ImageUrl="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif"
                     PostBackUrl="https://www.sandbox.paypal.com/cgi-bin/webscr" />
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="UHKERL2FYB7YC">
-                <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif"
-                    width="1" height="1">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="UHKERL2FYB7YC">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+-->
+
+
+
+
+
+
+
+
+
+                
             </asp:Panel>
             <div style="position: absolute; bottom: 15px;">
                 <hr />

@@ -10,10 +10,10 @@ namespace Azoth {
         protected void Page_Load(object sender, EventArgs e) {
             if (!IsPostBack) {
                 Session["CurrentPage"] = "WorkGuidesMembership.aspx";
-                string success = Request.QueryString["success"];
+                string success = Request.QueryString["st"];
                 string cancel = Request.QueryString["cancel"];
                 if (
-                    (success != null && success != "" && success == "true") /*||
+                    (success != null && success != "" && success == "Completed") /*||
                     (cancel != null && cancel != "" && cancel == "true") // TODO: take out when going live.*/   
                     ) {
                     pnlNotMember.Visible = false;

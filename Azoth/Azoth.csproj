@@ -101,6 +101,7 @@
     <Content Include="images\_hcc_thumbs\spacer.gif-thumb-80.gif" />
     <Content Include="navbar.css" />
     <Content Include="page.css" />
+    <Content Include="PayPal_IPN.aspx" />
     <Content Include="text.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -126,6 +127,13 @@
     </Compile>
     <Compile Include="DownloadFile.ashx.cs">
       <DependentUpon>DownloadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PayPal_IPN.aspx.cs">
+      <DependentUpon>PayPal_IPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayPal_IPN.aspx.designer.cs">
+      <DependentUpon>PayPal_IPN.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WorkGuide.cs" />
