@@ -9,6 +9,7 @@ namespace Azoth {
     public partial class WorkGuides1 : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
             if (!IsPostBack) {
+                IsMember = false;
                 Session["CurrentPage"] = "WorkGuides1.aspx";
                 if (Request.Cookies["AzothMember"] != null) {
                     HttpCookie cookie = Request.Cookies["AzothMember"];
@@ -48,7 +49,7 @@ namespace Azoth {
         }
 
         protected void btnHome1_Click(object sender, EventArgs e) {
-            Response.Redirect("default_alpha.htm");
+            Response.Redirect("default.htm");
         }
         protected void btnContactUs_Click(object sender, EventArgs e) {
             Response.Redirect("ContactUs.aspx");

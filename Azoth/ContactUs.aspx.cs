@@ -24,7 +24,7 @@ namespace Azoth {
             }
         }
         protected void btnHome1_Click(object sender, EventArgs e) {
-            Response.Redirect("default_alpha.htm");
+            Response.Redirect("default.htm");
         }
 
         protected void btnToActualWorkGuides_Click(object sender, EventArgs e) {

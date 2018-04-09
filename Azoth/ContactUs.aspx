@@ -58,7 +58,7 @@
                 <hr />
                 <table width="980px"><tr>
                 <td align="left">
-                    <input class="styledbuttons" onclick="location.href='default_alpha.htm'" style="margin-left:.1em;" type="button" name="gohome" value="Home"/>
+                    <input class="styledbuttons" onclick="location.href='default.htm'" style="margin-left:.1em;" type="button" name="gohome" value="Home"/>
                 </td>
                 <td align="right">
                     <input class="styledbuttons" onclick="location.href='WorkGuides2.aspx'" style="margin-right:.1em;" type="button" name="gotoworkguides" value="Work Guides"/>

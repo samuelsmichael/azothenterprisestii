@@ -11,49 +11,56 @@
 <body>
     <form id="form1" runat="server">
     <center>
-        <div class="otherthanmainpage" style="height: 607px; position: relative;">
+        <div class="otherthanmainpage" style="height: 607px; position: relative; overflow:auto;">
             <asp:DataList ID="dlWorkGuides" Width="80%" RepeatDirection="Vertical" Style="padding-left: 5px;
                 padding-right: 5px;" RepeatLayout="Table" ItemStyle-BorderStyle="Solid" ItemStyle-BorderWidth="0"
                 runat="server" OnItemDataBound="dlWorkGuides_ItemDataBound">
                 <ItemTemplate>
-                    <div style="text-align: center; padding-left: 5px; padding-right: 5px;">
+                    <div itemscope="" itemtype="http://schema.org/CreativeWork" style="text-align: center; padding-left: 5px; padding-right: 5px;">
+                        <meta itemprop="creator" content="Lari Mangum" />
                         <div id="WGHeading" class="workguidesectionheading">
                             <div class="BodyTitle2a">
                                 Work Guide</div>
                             <div class="workguideheadingweekbeginning">
                                 Week Beginning
-                                <%# Eval("DateString")%></div>
+                                <span itemprop="dateCreated"><%# Eval("DateString")%></span></div>
                         </div>
                         <div id="WGPonderence" class="workguidesectionponderence">
                             <div class="workguidebodyheading">
                                 Ponderence</div>
-                            <div class="ponderence">
-                                <asp:Label ID="lblToPonder" runat="server" Text='<%# Eval("ToPonder")%>'></asp:Label>
+                            <div  class="ponderence">
+                                <asp:Label itemprop="about" ID="lblToPonder" runat="server" Text='<%# Eval("ToPonder")%>'></asp:Label>
                             </div>
-                            <div class="ponderenceauthor">
-                                <asp:Label ID="lblToPonderAuthor" runat="server" Text='<%# Eval("ToPonderAuthor")%>'></asp:Label>
+                            <div itemprop="contributor" itemscope="" itemtype="http://schema.org/Person">
+                                <div class="ponderenceauthor">
+                                    <asp:Label itemprop="name"  ID="lblToPonderAuthor" runat="server" Text='<%# Eval("ToPonderAuthor")%>'></asp:Label>
+                                </div>
                             </div>
                         </div>
                         <div id="WGToRead" class="workguidesectiontoread">
-                            <div class="workguidebodyheading">
-                                To Read</div>
-                            <div class="toread">
-                                <asp:Label ID="lblToRead" runat="server" Text='<%# Eval("ToRead")%>'></asp:Label>
-                            </div>
-                            <div class="toreadpages">
-                                <asp:Label ID="lblToReadPages" runat="server" Text='<%# Eval("ToReadPages")%>'></asp:Label>
+                            <div itemprop="citation" itemtype="http://schema.org/CreativeWork" itemscope="" >
+                                <div class="workguidebodyheading">
+                                    To Read</div>
+                                <div class="toread">
+                                    <meta itemprop="url" content='<%# Eval("ToReadURL") %>' />
+                                    <asp:Label  ID="lblToRead" runat="server" Text='<%# Eval("ToRead")%>'></asp:Label>
+                                </div>
+                                <div class="toreadpages">
+                                    <asp:Label itemprop="mainEntityOfPage" ID="lblToReadPages" runat="server" Text='<%# Eval("ToReadPages")%>'></asp:Label>
+                                </div>
                             </div>
                         </div>
                         <div id="WGPractice" class="workguidesectiontopractice">
                             <div class="workguidebodyheading">
                                 To Practice</div>
-                            <div class="topractice">
-                                <asp:Label ID="lblToPractice" runat="server" Text='<%# Eval("ToPractice")%>'></asp:Label>
+                            <div itemprop="potentialAction" itemtype="http://schema.org/Action" itemscope="" class="topractice">
+                                <asp:Label itemprop="description" ID="lblToPractice" runat="server" Text='<%# Eval("ToPractice")%>'></asp:Label>
                             </div>
                         </div>
                     </div>
                 </ItemTemplate>
             </asp:DataList>
+            <asp:Panel runat="server" ID="pnlBottom">
             <div style="position: absolute; bottom: 55px;">
                 <table width="980px" cellpadding="0" cellspacing="0">
                     <tr align="center">
@@ -91,6 +98,7 @@
                     </tr>
                 </table>
             </div>
+            </asp:Panel>
         </div>
     </center>
     </form>

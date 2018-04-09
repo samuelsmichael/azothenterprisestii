@@ -26,7 +26,7 @@
                     padding-right: 100px;">
                     There are a year's worth of weekly Work Guides. In order to view the rest of them, and if you are a member, please key
                     in the password. Otherwise, to become a member, there is a one-time fee of $10.00 (USD), which you can
-                    pay via PayPal by clicking the Pay Now button, below.</div>
+                    pay by clicking the Pay Now button, below.</div>
             </asp:Panel>
             <asp:Panel runat="server" ID="pnlJustPaid" Visible="false">
                 <div class="BodyText" style="font-size: 12pt; margin-top: 2em; padding-left: 100px;

@@ -12,6 +12,14 @@ namespace Azoth {
         public string FileName { get; set; }
         public string FileBody { get; set; }
         public string ToPonder { get; set; }
+        public string ToReadURL {
+            get {
+                string anchor = ToRead;
+                int startIndex = anchor.IndexOf("href=\"");
+                int endIndex = anchor.IndexOf("\"", startIndex + 6);
+                return anchor.Substring(startIndex+6, endIndex - (startIndex+6));
+            }
+        }
         public string DateString {
             get {
                 return Date.ToString("MM/dd/yyyy");

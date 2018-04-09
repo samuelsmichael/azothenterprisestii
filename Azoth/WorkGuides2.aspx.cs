@@ -50,11 +50,15 @@ namespace Azoth {
 
         protected void Page_Load(object sender, EventArgs e) {
             if (!IsPostBack) {
+                pnlBottom.Visible = true;   
+                AllowPaging = true;
                 Session["CurrentPage"] = "WorkGuides2.aspx";
                 Session["WorkGuideNamesInDateOrder"] = null;
-                string secretKey = Request.QueryString["q103"];
-                if (secretKey != null && secretKey == "b103") {
+                string secondSecretKey = Request.QueryString["forgoogle"];
+                if (Common.Utils.isNothingNot(secondSecretKey) && secondSecretKey.ToLower() == "true") {
                     IsMember = true;
+                    AllowPaging = false;
+                    pnlBottom.Visible = false;
                 }
                 string allowPaging = Request.QueryString["AllowPaging"];
                 if (allowPaging != null) {
@@ -128,7 +132,7 @@ namespace Azoth {
             }
         }
         protected void btnHome1_Click(object sender, EventArgs e) {
-            Response.Redirect("default_alpha.htm");
+            Response.Redirect("default.htm");
         }
 
         protected void btnDownloadZipFileOfAllFiles_Click(object sender, EventArgs e) {

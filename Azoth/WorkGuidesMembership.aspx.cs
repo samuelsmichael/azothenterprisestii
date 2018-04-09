@@ -46,7 +46,7 @@ namespace Azoth {
 
         }
         protected void btnHome1_Click(object sender, EventArgs e) {
-            Response.Redirect("default_alpha.htm");
+            Response.Redirect("default.htm");
         }
         protected void btnEnterPasscode_Click(object sender, EventArgs e) {
             lblError.Visible = false;
