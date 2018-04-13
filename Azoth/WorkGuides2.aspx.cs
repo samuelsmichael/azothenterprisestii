@@ -67,7 +67,10 @@ namespace Azoth {
                 bindWorkGuides();
             }
             lblThankYou.Visible = false;
-            btnDAll.Visible = true;
+            btnDAll.Visible = false;
+            if (IsMember) {
+                btnDAll.Visible = true;
+            }
             string from = Request.QueryString["From"];
             if (Common.Utils.isNothingNot(from)) {
                 if (from.ToLower() == "email") {
